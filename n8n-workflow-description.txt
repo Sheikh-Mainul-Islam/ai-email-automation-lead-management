@@ -1,0 +1,18 @@
+Gmail Trigger:
+- Unread emails only
+
+Edit Fields:
+- Extract sender name, email, message
+
+HTTP Request:
+- Send email content to AI
+- Generate reply
+
+Send Message:
+- Reply via Gmail
+
+Google Sheets:
+- Append success or error logs
+
+Error Trigger:
+- Send alert email on failure
