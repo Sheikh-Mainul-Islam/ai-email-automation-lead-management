@@ -1,7 +1,7 @@
 # AI Email Automation & Lead Management System
 
 ![n8n Workflow Configuration](n8n-workflow-architecture.png)
-*(Note: Upload your workflow image to GitHub and make sure it is named workflow-screenshot.png)*
+
 
 ## 📨 Overview
 Welcome to the **AI Email Automation & Lead Management System**. This project is a fully automated, intelligent email auto-responder and lightweight CRM built entirely within [n8n](https://n8n.io/). 
