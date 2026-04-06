@@ -50,6 +50,6 @@ I specialize in building intelligent automation systems that streamline business
 
 💼 **Open to freelance & collaboration opportunities**
 * 🌐 **GitHub:** [Sheikh-Mainul-Islam](https://github.com/Sheikh-Mainul-Islam)
-* 📧 **Email:** sheiikhmainul1@gmail.com
+* 📧 **Email:** sheiikhmainul@gmail.com
 
 Feel free to fork this repository, customize the workflow, and use it to automate your own email operations!
