@@ -1,6 +1,6 @@
 # AI Email Automation & Lead Management System
 
-![n8n Workflow Configuration](workflow-screenshot.png)
+![n8n Workflow Configuration](n8n-workflow-architecture.png)
 *(Note: Upload your workflow image to GitHub and make sure it is named workflow-screenshot.png)*
 
 ## 📨 Overview
