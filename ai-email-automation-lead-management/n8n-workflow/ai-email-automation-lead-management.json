@@ -626,7 +626,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a professional assistant for a consulting business. Reply using ONLY the provided FAQ answer. Keep it polite, concise, and professional. Never add extra information.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"FAQ answer: {{ $node['FAQ_MATCH_ENGINE'].json.faq.Answer }}\"\n    }\n  ],\n  \"max_tokens\": 500\n}\n",
+        "jsonBody": "={\n  \"model\": \"gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a professional assistant for a consulting business. Reply using ONLY the provided FAQ answer. Keep it polite, concise, and professional. Never add extra information.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"FAQ answer: {{ $json.faq.Answer }}\"\n    }\n  ],\n  \"max_tokens\": 500\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -800,7 +800,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const items = $items(\"Check LEADS Sheet\");\n\n// Strict check for email existence\nconst exists = items.some(i => {\n  const email = i.json.Email;\n  return typeof email === \"string\" && email.includes(\"@\") && email.trim() !== \"\";\n});\n\nreturn [\n  {\n    json: {\n      exists: exists // boolean\n    }\n  }\n];\n"
+        "jsCode": "const inputItems = $items(\"Check LEADS Sheet\");\n\nreturn inputItems.map(item => {\n  const email = item.json.Email;\n\n  const exists =\n    typeof email === \"string\" &&\n    email.includes(\"@\") &&\n    email.trim() !== \"\";\n\n  return {\n    json: {\n      ...item.json,   // ✅ KEEP original data (VERY IMPORTANT)\n      exists: exists\n    }\n  };\n});"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1238,7 +1238,7 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "e9d49adf-5990-4a16-a0cf-41da9a79694b",
+  "versionId": "dc4e5015-e7fc-44b5-8626-b4f46beb781a",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "afc19c6207ec98d94c75def806c0f25d5b333a995a0ef3ce3bea03b446c783e2"
