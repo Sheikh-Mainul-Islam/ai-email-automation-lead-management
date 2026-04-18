@@ -1,0 +1,24 @@
+Copyright (c) 2026 Sheikh Mainul Islam. All Rights Reserved.
+
+# PROPRIETARY AND CONFIDENTIAL
+
+The code, n8n workflow architectures, custom JavaScript logic (including the FAQ Match Engine and input sanitization), and associated documentation contained in this repository are the exclusive intellectual property of Sheikh Mainul Islam. 
+
+## 1. Scope of License
+This repository serves strictly as a professional portfolio showcase and educational demonstration of skills in backend email automation, AI integration, and lead management systems.
+
+## 2. Permissions Granted
+You are granted a limited, non-exclusive, and revocable permission to:
+* View and read the contents of this repository via the GitHub interface strictly for the purpose of portfolio evaluation, hiring assessments, or architectural review.
+
+## 3. Restrictions
+Unless you have obtained explicit, written permission from the copyright holder, you are strictly PROHIBITED from:
+* Downloading, cloning, or copying the n8n workflow JSON files or custom JavaScript code.
+* Modifying, altering, or creating derivative works from this repository.
+* Distributing, sharing, or publishing any part of this project.
+* Replicating the email processing logic, regex filters, or routing architecture for commercial purposes, personal projects, or business operations.
+
+## 4. Disclaimer of Warranty
+THE SOFTWARE AND WORKFLOWS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For professional consultations, business automation inquiries, or licensing requests, please contact the repository owner directly.
