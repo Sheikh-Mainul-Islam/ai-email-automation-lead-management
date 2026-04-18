@@ -5,17 +5,17 @@
       "parameters": {
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "LEADS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=0"
         },
         "filtersUI": {
           "values": [
@@ -84,17 +84,17 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "LEADS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=0"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -205,17 +205,17 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "LEADS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=0"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -374,17 +374,17 @@
       "parameters": {
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": 353798623,
           "mode": "list",
           "cachedResultName": "FAQ_KNOWLEDGE",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=353798623"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=353798623"
         },
         "options": {}
       },
@@ -412,7 +412,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "bearer YOUR_OPENROUTER_API_KEY_HERE"
+              "value": "bearer ={{ $env[\"MY_PRIVATE_OPENROUTER_KEY\"] }}"
             },
             {
               "name": "Content-Type",
@@ -422,7 +422,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a real human professional replying to business emails. Write like a normal person, not like a template or proposal. Do NOT use placeholders (no names, no brackets, no variables). Do NOT sound formal, salesy, or academic. Keep the tone natural, polite, and confident.\\n\\nRules:\\n- Do not mention AI, automation, or systems\\n- Do not guess or invent details\\n- Ask for clarification if needed\\n- Write complete sentences only\\n- Keep replies concise and human\\n- NEVER use placeholders like [Name], [Sender], or similar\\n\\nAlways end with this exact signature:\\n\\nBest regards,\\nSheikh Mainul Islam\\nAutomation Consultant\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"{{ $node['CLEAN_INPUT'].json.message_text }}\"\n    }\n  ],\n  \"max_tokens\": 350\n}\n",
+        "jsonBody": "={[PROPRIETARY EMAIL AUTO-RESPONDER LOGIC AND SYSTEM PROMPT WITHHELD FOR IP PROTECTION]}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -465,17 +465,17 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "LEADS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=0"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -616,7 +616,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "bearer YOUR_OPENROUTER_API_KEY_HERE"
+              "value": "bearer ={{ $env[\"MY_PRIVATE_OPENROUTER_KEY\"] }}"
             },
             {
               "name": "Content-Type",
@@ -626,7 +626,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"model\": \"gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a professional assistant for a consulting business. Reply using ONLY the provided FAQ answer. Keep it polite, concise, and professional. Never add extra information.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"FAQ answer: {{ $json.faq.Answer }}\"\n    }\n  ],\n  \"max_tokens\": 500\n}",
+        "jsonBody": "={\n  \"model\": \"gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"[PROPRIETARY FAQ FORMATTING INSTRUCTIONS WITHHELD]\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"FAQ answer: {{ $json.faq.Answer }}\"\n    }\n  ],\n  \"max_tokens\": 500\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -668,17 +668,17 @@
         "operation": "update",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "LEADS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=0"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -908,17 +908,17 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "YOUR_GOOGLE_SHEET_ID_HERE",
+          "value": "={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}",
           "mode": "list",
           "cachedResultName": "AI Email Auto-Responder + Lead Track",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": 1262899425,
           "mode": "list",
           "cachedResultName": "ERROR_LOG sheet",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_HERE/edit#gid=1262899425"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/={{ $env[\"MY_PRIVATE_SHEET_ID\"] }}/edit#gid=1262899425"
         },
         "columns": {
           "mappingMode": "defineBelow",
@@ -999,7 +999,7 @@
     },
     {
       "parameters": {
-        "sendTo": "your.email@example.com",
+        "sendTo": "={{ $env[\"MY_PRIVATE_ALERT_EMAIL\"] }}",
         "subject": "=🚨 n8n Workflow Error Alert: {{ $json.Workflow }}",
         "message": "=Hello,\n\nAn error occurred in the workflow \"{{ $json.Workflow }}\".\n\nDetails:\n- Time: {{ $json.Time }}\n- Node: {{ $json.Node }}\n- Error Message: {{ $json.Error_Message }}\n\nStack Trace:\n{{ $json.Stack }}\n\nPlease check the workflow and resolve the issue.\n\nThanks,\nYour n8n Automation",
         "options": {
